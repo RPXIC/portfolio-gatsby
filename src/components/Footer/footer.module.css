@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+}
+@media (min-width: 1025px) {
+  .container {
+    width: 7rem;
+  }
+}
+
+.navbar {
+  width: 100%;
+  background-color: #bdbdbd54;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1025px) {
+  .navbar {
+    border-radius: 1rem 0 0 1rem;
+    width: 7rem;
+    flex-direction: column;
+    position: sticky;
+    top: 30%;
+    right: 0rem;
+  }
+}
+
+.link {
+  width: 4.5rem;
+  margin: 1.2rem 3rem 0rem;
+}
+@media (min-width: 1025px) {
+  .link {
+    margin: 1rem 1rem;
+  }
+}

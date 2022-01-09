@@ -1,0 +1,20 @@
+.container {
+  background-color: #ffffff52;
+  border: 1px solid gray;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1025px) {
+  .container {
+    border-radius: 1rem 1rem 0 0;
+  }
+}
+.container > svg {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 0.5rem;
+}

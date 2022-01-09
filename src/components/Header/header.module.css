@@ -1,0 +1,40 @@
+.container {
+  padding-top: 1rem;
+  display: flex;
+}
+@media (min-width: 1025px) {
+  .container {
+    flex: 1;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.content {
+  display: flex;
+	flex: 1;
+	flex-direction: column;
+	margin: 0 auto;
+
+}
+@media (min-width: 768px) {
+  .content {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1025px) {
+  .content {
+    align-items: start;
+  }
+}
+
+.pathText {
+  text-align: center;
+	font-size: 2.3rem;
+	margin: 0 1.5rem 1.5rem;
+}
+
+.navContainer {
+  flex: 1;
+}

@@ -1,28 +1,37 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "portfolio",
+    siteUrl: "https://www.rpxic.com",
+    title: "Ruben Ponce",
+    titleTemplate: "%s · Portfolio",
+    description:
+    "RPXIC Portfolio",
+    image: "/images/avatar.jpg",
   },
   plugins: [
     {
       resolve: "gatsby-source-datocms",
       options: {
-        apiToken: "e4d2c0b398c9e082dfbd823d7dbd1a",
+        apiToken: process.env.API_KEY,
       },
     },
+    'gatsby-plugin-dts-css-modules',
     "gatsby-plugin-image",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "G-HC2YEYYZ7F",
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-google-analytics",
+    //   options: {
+    //     trackingId: process.env.TRACKING_ID,
+    //   },
+    // },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/favicon.png",
       },
     },
     "gatsby-plugin-sharp",
