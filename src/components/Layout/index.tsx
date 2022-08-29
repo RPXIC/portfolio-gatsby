@@ -1,6 +1,4 @@
-import BackgroundImage from 'gatsby-background-image'
-import { convertToBgImage } from 'gbimage-bridge'
-import { getImage } from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import Header from '../Header'
 import Footer from '../Footer'
 import Seo from '../Seo'
@@ -13,19 +11,20 @@ interface Props {
 }
 
 const Layout = ({ children, pathName }: Props) => {
-  const res = useBackgroundImage()
-  const img = getImage(res)
-  const bgImg = convertToBgImage(img)
+  const bgImg = useBackgroundImage()
 
   return (
-    <BackgroundImage Tag='section' {...bgImg} preserveStackingContext>
-      <div className={layoutStyles.app}>
-        <Seo pathName={pathName} />
-        <Header pathName={pathName} />
-        <main className={layoutStyles.main}>{children}</main>
-        <Footer />
+    <>
+      <GatsbyImage style={{ position: 'fixed', height: '100vh' }} alt='' image={bgImg as any} />
+      <div style={{ position: 'absolute', width: '100%' }}>
+        <div className={layoutStyles.app}>
+          <Seo pathName={pathName} />
+          <Header pathName={pathName} />
+          <main className={layoutStyles.main}>{children}</main>
+          <Footer />
+        </div>
       </div>
-    </BackgroundImage>
+    </>
   )
 }
 
