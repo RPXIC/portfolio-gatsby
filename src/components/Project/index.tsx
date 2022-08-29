@@ -8,7 +8,7 @@ const Project = ({ project }: { project: IProject }) => {
     description,
     stack,
     website,
-    image: { gatsbyImageData },
+    image: { gatsbyImageData }
   } = project
 
   const image = getImage(gatsbyImageData)
