@@ -19,6 +19,10 @@
   box-shadow: 0px 0px 2px 1px black;
 }
 
+.image img {
+  border-radius: 2rem;
+}
+
 .stack {
   text-align: center;
 }
