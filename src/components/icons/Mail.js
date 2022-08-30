@@ -1,5 +1,3 @@
-import * as React from 'react'
-
 const Mail = (props) => (
   <svg viewBox='1 1 600 600' {...props}>
     <g transform='translate(-5.667 -6408.081) scale(6.66667)'>

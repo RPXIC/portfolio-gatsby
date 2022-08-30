@@ -1,48 +1,48 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
 })
 
 module.exports = {
+  jsxRuntime: 'automatic',
   siteMetadata: {
-    siteUrl: "https://www.rpxic.com",
-    title: "Ruben Ponce",
-    titleTemplate: "%s · Portfolio",
-    description:
-    "RPXIC Portfolio",
-    image: "/images/avatar.jpg",
+    siteUrl: 'https://www.rpxic.com',
+    title: 'Ruben Ponce',
+    titleTemplate: '%s · Portfolio',
+    description: 'RPXIC Portfolio',
+    image: '/images/avatar.jpg'
   },
   plugins: [
     {
-      resolve: "gatsby-source-datocms",
+      resolve: 'gatsby-source-datocms',
       options: {
-        apiToken: process.env.API_KEY,
-      },
+        apiToken: process.env.API_KEY
+      }
     },
     'gatsby-plugin-dts-css-modules',
-    "gatsby-plugin-image",
+    'gatsby-plugin-image',
     // {
     //   resolve: "gatsby-plugin-google-analytics",
     //   options: {
     //     trackingId: process.env.TRACKING_ID,
     //   },
     // },
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: "src/images/favicon.png",
-      },
+        icon: 'src/images/favicon.png'
+      }
     },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'images',
+        path: './src/images/'
       },
-      __key: "images",
-    },
-  ],
-};
+      __key: 'images'
+    }
+  ]
+}
