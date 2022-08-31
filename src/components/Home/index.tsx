@@ -10,7 +10,7 @@ const Home = () => (
       <h2 className={homeStyles.text}>
         I'm a Full Stack Developer from Barcelona. I was graduated in{' '}
         <a href='https://www.skylabcoders.com/es' target='_blank' rel='noreferrer'>
-          Skaylab Coders Academy
+          Skylab Coders Academy
         </a>
         , and I'm currently working at{' '}
         <a href='https://www.spotlio.com/' target='_blank' rel='noreferrer'>
