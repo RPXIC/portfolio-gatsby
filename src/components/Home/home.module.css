@@ -40,7 +40,7 @@
   }
 }
 
-.text > a {
+.text > span > a {
   font-size: inherit;
 }
 
