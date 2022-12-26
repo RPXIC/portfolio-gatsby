@@ -11,7 +11,7 @@ const Home = () => (
         <span>I'm a Full Stack Developer based in Barcelona, currently searching for a new position.</span>
         <br />
         <span>
-          I was graduated from{' '}
+          I graduated from{' '}
           <a href='https://www.skylabcoders.com/es' target='_blank' rel='noreferrer'>
             Skylab Coders Academy
           </a>
