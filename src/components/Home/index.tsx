@@ -4,11 +4,21 @@ import * as homeStyles from './home.module.css'
 const Home = () => (
   <div className={homeStyles.container}>
     <section className={homeStyles.content}>
-      <div className={homeStyles.welcome}>
+      <div className={homeStyles.title}>
         <h1>Ruben Ponce</h1>
       </div>
-      <h2 className={homeStyles.text}>
-        <span>I'm a Full Stack Developer based in Barcelona, currently searching for a new position.</span>
+      <h2 className={homeStyles.description}>
+        <span>
+          I'm a Full Stack JavaScript Developer based in Barcelona, currently working as Application Developer at{' '}
+          <a href='https://www.hays.es/' target='_blank' rel='noreferrer'>
+            HAYS
+          </a>{' '}
+          for{' '}
+          <a href='https://vibia.com/' target='_blank' rel='noreferrer'>
+            VIBIA
+          </a>
+          .
+        </span>
         <br />
         <span>
           I graduated from{' '}
