@@ -15,13 +15,7 @@ const Footer = () => {
   return (
     <footer className={footerStyles.container}>
       <nav className={footerStyles.navbar} data-cy='navbar-footer'>
-        <a
-          className={footerStyles.link}
-          href='https://github.com/RPXIC'
-          target='_blank'
-          rel='noreferrer'
-          title='GitHub'
-          data-cy='link-github'>
+        <a className={footerStyles.link} href='https://github.com/RPXIC' target='_blank' rel='noreferrer' title='GitHub' data-cy='link-github'>
           <GitHub />
         </a>
         <a
@@ -33,13 +27,7 @@ const Footer = () => {
           data-cy='link-linkedin'>
           <LinkedIn />
         </a>
-        <a
-          className={footerStyles.link}
-          href='mailto:rpc2works@gmail.com'
-          target='_blank'
-          rel='noreferrer'
-          title='Mail'
-          data-cy='link-mail'>
+        <a className={footerStyles.link} href='mailto:rubenpc.appdev@gmail.com' target='_blank' rel='noreferrer' title='Mail' data-cy='link-mail'>
           <Mail />
         </a>
         {/* {!error && (
