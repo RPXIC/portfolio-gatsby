@@ -8,17 +8,7 @@ const Home = () => (
         <h1>Ruben Ponce</h1>
       </div>
       <h2 className={homeStyles.description}>
-        <span>
-          I'm a Full Stack JavaScript Developer based in Barcelona, currently working as Application Developer at{' '}
-          <a href='https://www.hays.es/' target='_blank' rel='noreferrer'>
-            HAYS
-          </a>{' '}
-          for{' '}
-          <a href='https://vibia.com/' target='_blank' rel='noreferrer'>
-            VIBIA
-          </a>
-          .
-        </span>
+        <span>I'm a Full Stack JavaScript Developer based in Barcelona, currently working as a freelance.</span>
         <br />
         <span>
           I graduated from{' '}
@@ -28,6 +18,14 @@ const Home = () => (
           , and I worked at{' '}
           <a href='https://www.spotlio.com/' target='_blank' rel='noreferrer'>
             Spotlio
+          </a>
+          , and{' '}
+          <a href='https://www.hays.es/' target='_blank' rel='noreferrer'>
+            HAYS
+          </a>{' '}
+          for{' '}
+          <a href='https://vibia.com/' target='_blank' rel='noreferrer'>
+            VIBIA
           </a>{' '}
           as a Front End and Mobile Apps Developer.
         </span>
